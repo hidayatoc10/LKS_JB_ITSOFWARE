@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9959F7B3-93E1-4262-B73B-27A4ECB748CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>lks_it_hidayat</RootNamespace>
+    <AssemblyName>lks_it_hidayat</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>C:\Users\hiday\Downloads\APLIKASI\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>41DD8D741EE81FEC6B8C8A65AEF8CE5249B2265A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>lks_it_hidayat_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin.Designer.cs">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Kelola_Barang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Kelola_Barang.Designer.cs">
+      <DependentUpon>Form_Kelola_Barang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Kelola_Transaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Kelola_Transaksi.Designer.cs">
+      <DependentUpon>Form_Kelola_Transaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Kelola_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Kelola_User.Designer.cs">
+      <DependentUpon>Form_Kelola_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Laporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Laporan.Designer.cs">
+      <DependentUpon>Form_Laporan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LKSITSOFWAREDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LKSITSOFWAREDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LKSITSOFWAREDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LKSITSOFWAREDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LKSITSOFWAREDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LKSITSOFWAREDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LKSITSOFWAREDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LKSITSOFWAREDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LKSITSOFWAREDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LKSITSOFWAREDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LKSITSOFWAREDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LKSITSOFWAREDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LKSITSOFWAREDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LKSITSOFWAREDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LKSITSOFWAREDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LKSITSOFWAREDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Admin.resx">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Kelola_Barang.resx">
+      <DependentUpon>Form_Kelola_Barang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Kelola_Transaksi.resx">
+      <DependentUpon>Form_Kelola_Transaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Kelola_User.resx">
+      <DependentUpon>Form_Kelola_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Laporan.resx">
+      <DependentUpon>Form_Laporan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="LKSITSOFWAREDataSet.xsc">
+      <DependentUpon>LKSITSOFWAREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LKSITSOFWAREDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LKSITSOFWAREDataSet.xss">
+      <DependentUpon>LKSITSOFWAREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet1.xsc">
+      <DependentUpon>LKSITSOFWAREDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LKSITSOFWAREDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LKSITSOFWAREDataSet1.xss">
+      <DependentUpon>LKSITSOFWAREDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet2.xsc">
+      <DependentUpon>LKSITSOFWAREDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LKSITSOFWAREDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LKSITSOFWAREDataSet2.xss">
+      <DependentUpon>LKSITSOFWAREDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet3.xsc">
+      <DependentUpon>LKSITSOFWAREDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LKSITSOFWAREDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LKSITSOFWAREDataSet3.xss">
+      <DependentUpon>LKSITSOFWAREDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet4.xsc">
+      <DependentUpon>LKSITSOFWAREDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LKSITSOFWAREDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LKSITSOFWAREDataSet4.xss">
+      <DependentUpon>LKSITSOFWAREDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet5.xsc">
+      <DependentUpon>LKSITSOFWAREDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LKSITSOFWAREDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LKSITSOFWAREDataSet5.xss">
+      <DependentUpon>LKSITSOFWAREDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet61.xsc">
+      <DependentUpon>LKSITSOFWAREDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LKSITSOFWAREDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LKSITSOFWAREDataSet61.xss">
+      <DependentUpon>LKSITSOFWAREDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet7.xsc">
+      <DependentUpon>LKSITSOFWAREDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="LKSITSOFWAREDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LKSITSOFWAREDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LKSITSOFWAREDataSet7.xss">
+      <DependentUpon>LKSITSOFWAREDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="lks_it_hidayat_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-belief.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %2813%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %2814%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue-Abstract-Illustration-PNG-File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %2815%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP__14_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP__14_-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %2813%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
